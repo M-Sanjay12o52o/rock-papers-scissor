@@ -11,7 +11,7 @@ function getComputerChoice() {
     }
 }
 
-function game(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === "rock" && computerSelection.toLowerCase() === 'rock') {
         return "Rock vs. Rock: It's a tie.";
     }   else if (playerSelection.toLowerCase() === "rock" && computerSelection.toLowerCase() === 'paper') {
