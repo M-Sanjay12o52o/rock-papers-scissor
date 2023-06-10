@@ -3,7 +3,7 @@ function getComputerChoice() {
     if (choice === 1) {
         return "Rock";
     } else if (choice === 2) {
-        return "Papers";
+        return "Paper";
     } else if (choice === 3) {
         return "Scissors";
     } else {
@@ -22,14 +22,14 @@ function game(playerSelection, computerSelection) {
         return "Paper vs. Rock: Rock wins.";
     }   else if (playerSelection === "Paper" && computerSelection === 'Paper') {
         return "Paper vs. Paper: It's a tie.";
-    }   else if (playerSelection === "Papers" && computerSelection === "Scissors") {
-        return "Papers vs. Scissors: Scissor's win.";
-    }   else if (playerSelection === "Scissor's" && computerSelection === "Rock") {
+    }   else if (playerSelection === "Paper" && computerSelection === "Scissors") {
+        return "Papers vs. Scissors: Scissors win.";
+    }   else if (playerSelection === "Scissors" && computerSelection === "Rock") {
         return "Scissor's vs. Rock: Rock wins.";
-    }   else if (playerSelection === "Scissor's" && computerSelection === "Paper") {
-        return "Scissor's vs. Paper: Scissor's win.";
-    }   else if (playerSelection === "Scissor's" && computerSelection === "scissor's") {
-        return "Scissor's vs. Scissor's: It's a tie";
+    }   else if (playerSelection === "Scissors" && computerSelection === "Paper") {
+        return "Scissor's vs. Paper: Scissors win.";
+    }   else if (playerSelection === "Scissors" && computerSelection === "Scissors") {
+        return "Scissors vs. Scissors: It's a tie";
     }
 }       
 
