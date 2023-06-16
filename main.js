@@ -56,11 +56,13 @@ function game() {
         let result = playRound(player, getComputerChoice());
         console.log(result);
 
-        if (result === "You win.") {
+        if (result.substring(result.length - 5) === " win.") {
             userScore += 1;
+            computerScore -= 1;
             // console.log(userScore);
-        } else if (result === "You lose.") {
+        } else if (result.substring(result.length -5) === "lose.") {
             computerScore += 1;
+            userScore -= 1;
             // console.log(computerScore); 
         }
     }
