@@ -45,7 +45,9 @@ function playRound(playerSelection, computerSelection) {
 
 // console.log(game('Rock', 'Rock'));
 
-let player = "Rock";
+// let player = prompt("Enter your Selection: ", 'rock');
+let player = 'rock';
+
 
 function game() {
     let userScore = 0;
@@ -65,7 +67,13 @@ function game() {
             userScore -= 1;
             // console.log(computerScore); 
         }
-    }
+    } 
+        if (userScore > computerScore) {
+            console.log("You are the Winner");
+        } else {
+            console.log("You lost");
+        }
+    
 
     console.log("Final scores:");
     console.log("User score:", userScore);
@@ -75,4 +83,3 @@ function game() {
 }
 
 game();
-
