@@ -70,7 +70,10 @@ function game() {
     } 
         if (userScore > computerScore) {
             console.log("You are the Winner");
-        } else {
+        } else if (userScore == computerScore) {
+            console.log("It's a TIE");
+        } 
+        else {
             console.log("You lost");
         }
     
